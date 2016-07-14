@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<div class="blocks">
+			<form action="" onsubmit="return validate();">
+				<div class="first_block">
+					<p>Login</p>
+					<input class="name" type="text" id="userName"/>
+						<div class="error_Name" id="errorName" >Only lowercase letters and uppercase in the Latin alphabet, numbers, and \"_\" character! More than 5 symbol!!</div>
+					<p>Your Phone</p>
+					   <div class="error_Phone" id="errorPhone" >Only number your mobile phone!</div>
+					   <input class="phone" type="text" id="userPhone"/><br>
+					<p>Password</p>
+					   <div class="error_Password" id="errorPassword" >Only lowercase letters and uppercase in the Latin alphabet, numbers, and \"_\" character! More than 5 symbol!!</div>
+					   <input class="password" type="password" id="userPassword"/>
+					<p>Once more, please</p>
+					   <div class="error_Name" id="errorPasswordInspection" >Password to rewrite:  Be more attentive. Enter once more!!!</div>
+					   <input class="inspection_password" type="password" id="userPasswordInspection"/><br>
+				</div>
+				<div class="block_second">
+					<div class="sex">
+						<p>Sex</p>
+							<input type="radio" name="sex" checked="checked" value="male" />m
+							<input type="radio" name="sex" value="female" />f<br>
+					</div>
+					<div class="age">
+						<p>Age</p>
+							<p><select size="2" multiple name="age[]">
+								<option value="9">9</option>
+								<option value="10">10</option>
+								<option value="11">11</option>
+								<option value="12">12</option>
+								<option value="13">13</option>
+								<option value="14">14</option>
+								<option value="15">15</option>
+								<option value="16">16</option>
+								<option selected value="17">17</option>
+								<option value="18">18</option>
+								<option value="19">19</option>
+								<option value="20">20</option>
+								<option value="21">21</option>
+								<option value="22">22</option>
+								<option value="23">23</option>
+								<option value="24">24</option>
+								<option value="25">25</option>
+								<option value="26">26</option>
+								<option value="27">27</option>
+								<option value="28">28</option>
+								<option value="29">29</option>
+								<option value="30">30</option>
+							</select></p>
+					</div>
+				</div>
+				<div class="last_block">
+					<div class="comments">
+						<p>Comments<Br></p>
+						<p><textarea name="comment" cols="40" rows="3"></textarea></p>
+					</div>
+					<div class="submit">
+						<button type="submit">Join Us</button><br>
+					</div>
+				</div>
+			</form>
+		</div>
+	<script src="script.js"></script>
+	</body>
+</html>
+
